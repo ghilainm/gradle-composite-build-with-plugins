@@ -1,0 +1,23 @@
+import test.gradle.CustomJavaLibraryPlugin
+import test.gradle.MultiProjectsPlugin
+
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'test.gradle:multi-projects-plugin:1.0.0-SNAPSHOT'
+        classpath 'test.gradle:custom-java-library-plugin:1.0.0-SNAPSHOT'
+    }
+}
+
+apply plugin: MultiProjectsPlugin
+
+subprojects {
+    apply plugin: CustomJavaLibraryPlugin
+}
+
+allprojects {
+    group = "test.gradle"
+    version = "1.0.0-SNASPHOT"
+}

@@ -1,0 +1,12 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+group = "test.gradle"
+version = "1.0.0-SNAPSHOT"
+
+apply plugin: 'groovy'
+
+dependencies {
+    implementation "test.gradle:hello-world-plugin:1.0.0-SNAPSHOT"
+}

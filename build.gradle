@@ -1,0 +1,5 @@
+["assemble", "build", "clean"].each { name ->
+    task(name) {
+        dependsOn gradle.includedBuilds*.task(':'+name)
+    }
+}

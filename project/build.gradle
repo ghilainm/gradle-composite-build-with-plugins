@@ -1,0 +1,14 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'test.gradle:custom-java-library-plugin:1.0.0-SNAPSHOT'
+    }
+}
+
+
+group = "test.gradle"
+version = "1.0.0-SNASPHOT"
+
+apply plugin: test.gradle.CustomJavaLibraryPlugin

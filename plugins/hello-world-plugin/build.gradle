@@ -1,0 +1,8 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+group = "test.gradle"
+version = "1.0.0-SNAPSHOT"
+
+apply plugin: 'groovy'
